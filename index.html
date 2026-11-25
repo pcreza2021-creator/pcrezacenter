@@ -1,137 +1,185 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#101827">
-<meta name="description" content="کافی‌نت رضا در روستای جوادیه؛ خدمات اینترنتی، اداری، خودرو، گذرنامه، وام، قضایی، چاپ، طراحی و رایانه">
-<title>کافی‌نت رضا | PC REZA CENTER</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
-:root{--bg:#0b1220;--panel:#121e31;--panel2:#17263d;--text:#eef4ff;--muted:#a9b8cf;--mint:#39d6b0;--blue:#62a7ff;--line:#2a3b55}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:linear-gradient(180deg,#0b1220,#101b2d);color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.9}a{color:inherit;text-decoration:none}button,input{font:inherit}
-.topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px 5%;background:#0b1220ed;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
-.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}.brand b,.brand small{display:block}.brand b{font-size:17px}.brand small{color:var(--muted);font-size:9px;letter-spacing:1.3px}.brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--mint),var(--blue));color:#081322;font-weight:900;font-size:23px}
-nav{display:flex;gap:17px;color:var(--muted);font-size:12px}nav a:hover{color:var(--mint)}.menu-toggle{display:none;background:var(--panel2);color:white;border:1px solid var(--line);border-radius:9px;padding:6px 11px}
-.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:11px;padding:10px 17px;font-weight:800;font-size:13px;cursor:pointer;transition:.2s}.primary{background:var(--mint);color:#071520}.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}.btn:hover{transform:translateY(-2px);filter:brightness(1.07)}
-.hero{max-width:1200px;margin:auto;padding:72px 5%;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px;min-height:440px}.eyebrow{color:var(--mint);font-size:12px;font-weight:800}.hero h1{font-size:clamp(30px,5vw,51px);line-height:1.5;margin:12px 0}.hero h1 em{font-style:normal;color:var(--mint)}.hero p,.section-heading p,.about p{color:var(--muted)}.hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin:22px 0}.hero-note{font-size:12px;color:var(--muted)}
-.hero-art{height:270px;display:grid;place-items:center;position:relative}.screen{width:min(350px,90%);height:210px;border:9px solid #52647d;border-radius:18px;background:linear-gradient(135deg,#132e49,#07111f);box-shadow:0 25px 70px #0008;display:grid;place-content:center;text-align:center}.screen span{font-size:30px;font-weight:900;color:var(--mint);letter-spacing:2px}.screen b{font-size:15px}.floating-chip{position:absolute;bottom:3px;right:5%;background:var(--mint);color:#081522;padding:7px 13px;border-radius:10px;font-size:11px;font-weight:900}
-.trust-row{display:flex;justify-content:center;gap:65px;padding:20px 5%;background:#121e31;border-block:1px solid var(--line)}.trust-row div{text-align:center}.trust-row b,.trust-row span{display:block}.trust-row b{color:var(--mint);font-size:19px}.trust-row span{color:var(--muted);font-size:11px}
-.section{max-width:1200px;margin:auto;padding:58px 5%}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.section-heading h2,.about h2,.contact-section h2{font-size:27px;margin:4px 0}.section-heading p{max-width:480px;font-size:13px;margin:0}
-.search-box{width:100%;padding:13px 16px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:white;outline:none;margin:0 0 17px}.search-box:focus{border-color:var(--mint)}.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.filter{border:1px solid var(--line);background:var(--panel2);color:var(--muted);padding:7px 13px;border-radius:30px;font-size:11px;cursor:pointer}.filter.active,.filter:hover{background:var(--mint);color:#071520;border-color:var(--mint);font-weight:800}
-.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service-card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:17px;transition:.2s}.service-card:hover{border-color:#3d927f;transform:translateY(-3px)}.service-icon{font-size:27px}.service-card h3{margin:5px 0 9px;font-size:16px;color:var(--mint)}.service-list{list-style:none;padding:0;margin:0}.service-list li{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 0;border-top:1px solid #ffffff12;font-size:11px;color:var(--muted)}.order-service{flex:none;border:1px solid #287f70;background:#123e3b;color:#8ff3d9;border-radius:8px;padding:5px 9px;font-size:10px;cursor:pointer}.order-service:hover{background:var(--mint);color:#071520}
-.products{background:#0e1929}.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.product-card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:15px;padding:18px;text-align:center}.product-visual{font-size:42px}.product-card h3{font-size:14px;margin:5px 0}.product-card p{font-size:11px;color:var(--muted);min-height:44px}.product-card .btn{width:100%;font-size:11px}
-.policy{border:1px solid #287f70;background:#102b2c;border-radius:14px;padding:16px 18px;color:#c6eee4;font-size:12px;margin-top:18px}
-.about{display:grid;grid-template-columns:180px 1fr;gap:30px;align-items:center}.about-mark{height:145px;display:grid;place-content:center;text-align:center;border-radius:23px;background:linear-gradient(135deg,#173c53,#17263d);color:var(--mint);font-size:29px;font-weight:900}
-.faq details{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:12px 15px;margin:9px 0}.faq summary{cursor:pointer;font-weight:700;font-size:13px}.faq details p{color:var(--muted);font-size:12px;margin-bottom:0}
-.contact-section{text-align:center;padding:55px 5%;background:linear-gradient(135deg,#123c4c,#14253b)}.contact-grid{max-width:900px;margin:22px auto;display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.contact-grid div{background:#ffffff12;padding:14px;border-radius:12px}.contact-grid small,.contact-grid b{display:block}.contact-grid small{color:#b9d4dc;font-size:11px}.contact-grid b{font-size:13px}
-.socials{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin:18px 0}.socials a{border:1px solid #ffffff35;border-radius:9px;padding:6px 12px;font-size:11px}
-footer{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:22px 5%;background:#080e18;color:var(--muted);font-size:11px}
-.game-wrap{max-width:500px;margin:auto;padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:18px;text-align:center}.game-info{display:flex;justify-content:space-between;color:var(--muted);font-size:12px} .game-info b{color:var(--mint)}#snakeCanvas{display:block;width:min(100%,380px);height:auto;margin:12px auto;border:2px solid #38516c;border-radius:12px;background:#081421;touch-action:none}.game-message{color:var(--mint);font-size:12px}.game-actions{display:flex;justify-content:center;gap:9px}.snake-controls{display:none;gap:7px;justify-content:center;flex-direction:column;align-items:center;margin:12px}.snake-controls div{display:flex;gap:7px}.snake-controls button{width:45px;height:40px;border:1px solid var(--line);border-radius:9px;background:var(--panel2);color:white;font-size:17px}
-@media(max-width:850px){nav{gap:10px}.service-grid{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:repeat(2,1fr)}.hero{padding-top:48px}}
-@media(max-width:650px){.topbar{flex-wrap:wrap}.menu-toggle{display:block;margin-right:auto}nav{display:none;order:5;width:100%;flex-direction:column;gap:8px;padding:10px 0}nav.open{display:flex}.hero{grid-template-columns:1fr;text-align:center;padding:43px 5% 30px;gap:5px}.hero-actions{justify-content:center}.hero-art{height:210px}.trust-row{gap:18px}.trust-row b{font-size:16px}.trust-row span{font-size:10px}.section{padding:43px 5%}.section-heading{display:block}.section-heading p{margin-top:8px}.about{grid-template-columns:1fr;text-align:center}.about-mark{max-width:180px;margin:auto}.contact-grid{grid-template-columns:1fr}.snake-controls{display:flex}footer{flex-direction:column;text-align:center}.service-grid{grid-template-columns:1fr}}
-@media(max-width:390px){.product-grid{grid-template-columns:1fr}.hero h1{font-size:30px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1458d4">
+  <meta name="description" content="کافی‌نت رضا؛ خدمات اینترنتی، دولتی، خودرو، قضایی، چاپ و رایانه در روستای جوادیه">
+  <title>کافی‌نت رضا | PC REZA CENTER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
-<header class="topbar">
-<a class="brand" href="#home"><span class="brand-mark">R</span><span><b>کافی‌نت رضا</b><small>PC REZA CENTER</small></span></a>
-<button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو">☰</button>
-<nav id="mainNav"><a href="#home">خانه</a><a href="#services">خدمات</a><a href="#products">محصولات</a><a href="#game">بازی</a><a href="#about">درباره ما</a><a href="#contact">تماس</a></nav>
-<a class="btn secondary" href="https://wa.me/989024356801?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C%DB%8C%20%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%DA%A9%D8%A7%D9%81%DB%8C%E2%80%8C%D9%86%D8%AA%20%D8%B1%D8%B6%D8%A7%20%D9%BE%DB%8C%D8%A7%D9%85%20%D9%85%DB%8C%E2%80%8C%D8%AF%D9%87%D9%85." target="_blank" rel="noopener">واتساپ</a>
+<header class="site-header">
+  <a class="brand" href="#home">
+    <span class="brand-logo">R</span>
+    <span><b>کافی‌نت رضا</b><small>PC REZA CENTER</small></span>
+  </a>
+  <button class="mobile-menu" id="mobileMenu" aria-label="باز کردن منو">☰</button>
+  <nav id="mainNav">
+    <a href="#home">خانه</a><a href="#services">خدمات اینترنتی</a><a href="#popular">خدمات پرطرفدار</a>
+    <a href="#shop">فروشگاه</a><a href="#about">درباره ما</a><a href="#contact">تماس</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-button" id="cartOpen" aria-label="سبد سفارش">سبد <span id="cartCount">۰</span></button>
+    <button class="admin-link" id="adminOpen">ورود مدیریت</button>
+  </div>
 </header>
+
 <main>
 <section class="hero" id="home">
-<div><span class="eyebrow">خدمات حضوری در روستای جوادیه</span><h1>همه خدمات دیجیتال،<br><em>یک‌جا در کافی‌نت رضا</em></h1>
-<p>خدمات اینترنتی و اداری، خودرو، گذرنامه، وام، امور قضایی، چاپ و طراحی، نصب ویندوز و تعمیرات رایانه؛ همراه با سفارش محصولات دیجیتال.</p>
-<div class="hero-actions"><a class="btn primary" href="#services">مشاهده خدمات و سفارش</a><a class="btn secondary" href="#products">سفارش محصولات</a></div>
-<div class="hero-note">ثبت درخواست از طریق واتساپ؛ انجام خدمات فقط به‌صورت حضوری در کافی‌نت رضا.</div></div>
-<div class="hero-art"><div class="screen"><span>PC REZA</span><b>مرکز خدمات دیجیتال</b></div><div class="floating-chip">خدمات رایانه و اینترنت</div></div>
+  <div class="hero-content">
+    <span class="pill"><i></i> ارائه خدمات حضوری در روستای جوادیه</span>
+    <h1>کارهای اینترنتی و اداری‌تان را<br><em>با کافی‌نت رضا</em> انجام دهید</h1>
+    <p>از ثبت‌نام سامانه‌های دولتی و خدمات خودرو تا امور قضایی، وام، چاپ، طراحی و تعمیرات رایانه؛ خدمات متنوع در یک مجموعه.</p>
+    <div class="hero-buttons">
+      <a class="btn btn-primary" href="#services">مشاهده همه خدمات <span>←</span></a>
+      <a class="btn btn-outline" href="#contact">راه‌های ارتباطی</a>
+    </div>
+    <div class="hero-footnote">ثبت سفارش اینترنتی فقط برای هماهنگی است؛ انجام خدمات با مراجعه حضوری صورت می‌گیرد.</div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+    <div class="device-card">
+      <div class="device-top"><span></span><span></span><span></span><b>PC REZA</b></div>
+      <div class="device-screen">
+        <div class="screen-symbol">R</div>
+        <strong>مرکز خدمات دیجیتال</strong>
+        <small>سریع، دقیق، مطمئن</small>
+        <div class="screen-bars"><i></i><i></i><i></i></div>
+      </div>
+      <div class="device-base"></div>
+    </div>
+    <div class="floating-card float-top">🖥️ خدمات رایانه</div>
+    <div class="floating-card float-bottom">🌐 خدمات اینترنتی</div>
+  </div>
 </section>
-<section class="trust-row"><div><b>۸ سال</b><span>تجربه فعالیت</span></div><div><b>حضوری</b><span>ارائه خدمات در مغازه</span></div><div><b>متنوع</b><span>خدمات و محصولات دیجیتال</span></div></section>
-<section class="section" id="services">
-<div class="section-heading"><div><span class="eyebrow">خدمت موردنظرتان را پیدا کنید</span><h2>خدمات کافی‌نت رضا</h2></div><p>نام خدمت را جست‌وجو کنید و برای هماهنگی اولیه روی «سفارش در واتساپ» بزنید.</p></div>
-<input class="search-box" id="serviceSearch" type="search" placeholder="جست‌وجو در خدمات؛ مثلاً تعویض پلاک، ثنا، وام، گذرنامه..." aria-label="جست‌وجو در خدمات">
-<div class="filter-row" id="filters"></div><div class="service-grid" id="serviceGrid"></div>
-<div class="policy">توجه: پیام واتساپ فقط برای ثبت درخواست و هماهنگی اولیه است. انجام خدمات به‌صورت حضوری انجام می‌شود. ارائه هر خدمت، به فعال بودن سامانه، شرایط متقاضی و مقررات مربوط بستگی دارد.</div>
+
+<section class="stats">
+  <div><b>۸ سال</b><span>تجربه فعالیت</span></div>
+  <div><b>حضوری</b><span>ارائه خدمات در مغازه</span></div>
+  <div><b>متنوع</b><span>خدمات و محصولات دیجیتال</span></div>
 </section>
-<section class="section products" id="products">
-<div class="section-heading"><div><span class="eyebrow">سفارش و استعلام</span><h2>محصولات و تجهیزات</h2></div><p>برای استعلام قیمت، موجودی و شرایط گارانتی، محصول موردنظر را انتخاب کنید.</p></div>
-<div class="product-grid">
-<article class="product-card"><div class="product-visual">💻</div><h3>لپ‌تاپ نو و کارکرده</h3><p>سفارش لپ‌تاپ با بودجه‌های مختلف و استعلام ضمانت</p><button class="btn primary product-order" data-product="لپ‌تاپ نو و کارکرده">سفارش در واتساپ</button></article>
-<article class="product-card"><div class="product-visual">🖥️</div><h3>کامپیوتر و قطعات</h3><p>کیس، مانیتور، رم، SSD، پاور و قطعات رایانه</p><button class="btn primary product-order" data-product="کامپیوتر و قطعات">سفارش در واتساپ</button></article>
-<article class="product-card"><div class="product-visual">⌨️</div><h3>لوازم جانبی</h3><p>ماوس، کیبورد، اسپیکر، کول‌پد و تجهیزات جانبی</p><button class="btn primary product-order" data-product="لوازم جانبی کامپیوتر">سفارش در واتساپ</button></article>
-<article class="product-card"><div class="product-visual">🔌</div><h3>لوازم موبایل</h3><p>شارژر، کابل، مبدل، کارت حافظه و فلش</p><button class="btn primary product-order" data-product="لوازم موبایل و حافظه">سفارش در واتساپ</button></article>
-<article class="product-card"><div class="product-visual">🖨️</div><h3>پرینتر و ملزومات</h3><p>پرینتر، تونر، کارتریج و لوازم مصرفی</p><button class="btn primary product-order" data-product="پرینتر و ملزومات چاپ">سفارش در واتساپ</button></article>
-<article class="product-card"><div class="product-visual">📡</div><h3>مودم و شبکه</h3><p>مودم، روتر، دانگل وای‌فای و تجهیزات شبکه</p><button class="btn primary product-order" data-product="مودم و تجهیزات شبکه">سفارش در واتساپ</button></article>
-<article class="product-card"><div class="product-visual">💾</div><h3>حافظه و ذخیره‌سازی</h3><p>هارد اکسترنال، SSD، فلش و کارت حافظه</p><button class="btn primary product-order" data-product="حافظه و تجهیزات ذخیره‌سازی">سفارش در واتساپ</button></article>
-<article class="product-card"><div class="product-visual">🎮</div><h3>لوازم و تجهیزات گیمینگ</h3><p>دسته بازی و لوازم جانبی گیمینگ</p><button class="btn primary product-order" data-product="تجهیزات گیمینگ">سفارش در واتساپ</button></article>
-</div>
-<p class="hero-note">قیمت و موجودی محصولات هنگام هماهنگی اعلام می‌شود؛ ثبت سفارش به معنی تأیید قطعی موجودی نیست.</p>
+
+<section class="section" id="popular">
+  <div class="section-head">
+    <div><span class="eyebrow">شروع سریع</span><h2>خدمات پرطرفدار</h2></div>
+    <p>برای مشاهده جزئیات و ثبت درخواست، خدمت موردنظر را انتخاب کنید.</p>
+  </div>
+  <div class="popular-grid" id="popularGrid">
+    <button class="popular-item" data-jump="خدمات خودرو"><span>🚘</span><b>خدمات خودرو</b><small>ثبت‌نام، خلافی، تعویض پلاک</small></button>
+    <button class="popular-item" data-jump="خدمات گذرنامه"><span>🛂</span><b>گذرنامه</b><small>عادی و زیارتی</small></button>
+    <button class="popular-item" data-jump="وام و تسهیلات بانکی"><span>🏦</span><b>وام و تسهیلات</b><small>ازدواج، فرزندآوری، مسکن</small></button>
+    <button class="popular-item" data-jump="خدمات قضایی و ثنا"><span>⚖️</span><b>خدمات قضایی</b><small>ثنا، ابلاغیه، سوءپیشینه</small></button>
+    <button class="popular-item" data-jump="یارانه و خدمات معیشتی"><span>💳</span><b>یارانه و کالابرگ</b><small>اعتراض و پیگیری</small></button>
+  </div>
 </section>
-<section class="section" id="game">
-<div class="section-heading"><div><span class="eyebrow">چند دقیقه سرگرمی</span><h2>بازی مار (Snake)</h2></div><p>با کلیدهای جهت‌دار یا دکمه‌های لمسی، مار را حرکت دهید.</p></div>
-<div class="game-wrap"><div class="game-info"><span>امتیاز: <b id="snakeScore">۰</b></span><span>رکورد این نوبت: <b id="snakeBest">۰</b></span></div><canvas id="snakeCanvas" width="380" height="380" aria-label="بازی مار"></canvas><p class="game-message" id="snakeMessage">برای شروع، دکمه شروع بازی را بزنید.</p><div class="game-actions"><button class="btn primary" id="snakeStart">شروع بازی</button><button class="btn secondary" id="snakePause">توقف</button></div><div class="snake-controls"><button data-dir="up">▲</button><div><button data-dir="left">◀</button><button data-dir="down">▼</button><button data-dir="right">▶</button></div></div></div>
+
+<section class="section services-section" id="services">
+  <div class="section-head">
+    <div><span class="eyebrow">فهرست کامل خدمات</span><h2>چه خدمتی نیاز دارید؟</h2></div>
+    <p>خدمت موردنظر را جست‌وجو کنید یا از دسته‌بندی‌ها کمک بگیرید.</p>
+  </div>
+  <div class="service-toolbar">
+    <label class="search-box"><span>⌕</span><input id="serviceSearch" type="search" placeholder="جست‌وجوی خدمت؛ مثلاً اعتراض یارانه، تعویض پلاک، ثبت‌نام..."></label>
+    <select id="categoryFilter" aria-label="فیلتر دسته‌بندی"><option value="all">همه دسته‌بندی‌ها</option></select>
+  </div>
+  <div class="result-caption" id="serviceResultCount"></div>
+  <div class="service-grid" id="serviceGrid">
+    <div class="loading-card">در حال بارگذاری خدمات...</div>
+  </div>
 </section>
-<section class="section about" id="about"><div class="about-mark">PC<br>REZA</div><div><span class="eyebrow">درباره ما</span><h2>کافی‌نت رضا؛ همراه خدمات دیجیتال شما</h2><p>کافی‌نت رضا با تجربه در ارائه خدمات اینترنتی، اداری و رایانه‌ای، در روستای جوادیه آماده خدمت‌رسانی حضوری است. درخواست خود را از طریق واتساپ اعلام کنید و برای انجام خدمت به مغازه مراجعه فرمایید.</p></div></section>
-<section class="section faq"><div class="section-heading"><div><span class="eyebrow">پاسخ پرسش‌های رایج</span><h2>سؤالات متداول</h2></div></div>
-<details><summary>آیا خدمات به‌صورت غیرحضوری انجام می‌شود؟</summary><p>خیر. ثبت درخواست و هماهنگی اولیه از طریق واتساپ انجام می‌شود؛ انجام خدمات فقط به‌صورت حضوری است.</p></details>
-<details><summary>چطور برای یک خدمت درخواست بدهم؟</summary><p>خدمت موردنظر را پیدا کنید، روی دکمه سفارش در واتساپ بزنید و پیام آماده را ارسال کنید.</p></details>
-<details><summary>آیا قیمت همه خدمات در سایت درج شده است؟</summary><p>هزینه به نوع خدمت، تعرفه سامانه و مدارک موردنیاز بستگی دارد. برای اطلاع از هزینه، پیام بدهید یا حضوری مراجعه کنید.</p></details>
-<details><summary>آیا ثبت درخواست به معنی تضمین انجام خدمت است؟</summary><p>خیر. انجام هر خدمت به شرایط متقاضی، مدارک، فعال بودن سامانه و مقررات مربوط بستگی دارد.</p></details>
+
+<section class="shop-section" id="shop">
+  <div class="section section-inner">
+    <div class="section-head">
+      <div><span class="eyebrow">محصولات و تجهیزات</span><h2>فروشگاه کافی‌نت رضا</h2></div>
+      <p>برای استعلام قیمت، موجودی و سفارش محصولات پیام بفرستید.</p>
+    </div>
+    <div class="shop-toolbar">
+      <label class="search-box"><span>⌕</span><input id="productSearch" type="search" placeholder="جست‌وجوی محصول..."></label>
+      <span>قیمت و موجودی هنگام هماهنگی اعلام می‌شود.</span>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </div>
 </section>
-<section class="contact-section" id="contact"><span class="eyebrow">منتظر دیدارتان هستیم</span><h2>تماس با کافی‌نت رضا</h2><div class="contact-grid"><div><small>شماره تماس و واتساپ</small><b dir="ltr">09024356801</b></div><div><small>نشانی</small><b>فارس، ارسنجان، روستای جوادیه، پشت دستگاه تسویه آب</b></div><div><small>نحوه ارائه خدمات</small><b>حضوری</b></div></div>
-<div class="socials"><a href="https://instagram.com/pcrezacenter" target="_blank" rel="noopener">اینستاگرام</a><a href="https://rubika.ir/pcrezacenter" target="_blank" rel="noopener">روبیکا</a><a href="https://ble.ir/pcrezacenter" target="_blank" rel="noopener">بله</a><a href="https://eitaa.com/pcrezacenter" target="_blank" rel="noopener">ایتا</a><a href="https://shad.ir/pcrezacenter" target="_blank" rel="noopener">شاد</a></div>
-<a class="btn primary" href="tel:09024356801">تماس تلفنی</a> <a class="btn secondary" href="https://wa.me/989024356801" target="_blank" rel="noopener">ارسال پیام واتساپ</a>
+
+<section class="about-section section" id="about">
+  <div class="about-badge"><span>PC</span><b>REZA</b><small>CENTER</small></div>
+  <div><span class="eyebrow">درباره مجموعه</span><h2>کافی‌نت رضا؛ همراه خدمات دیجیتال شما</h2>
+    <p>کافی‌نت رضا با ۸ سال تجربه در زمینه خدمات اینترنتی، اداری، رایانه‌ای و چاپ، در روستای جوادیه آماده خدمت‌رسانی حضوری است. تلاش ما ارائه خدمات متنوع و راهنمایی دقیق مراجعان است.</p>
+    <a class="text-link" href="#contact">اطلاعات تماس و نشانی ←</a>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="section">
+    <span class="eyebrow">ارتباط با ما</span><h2>منتظر دیدارتان هستیم</h2>
+    <div class="contact-grid">
+      <div><span>☎</span><small>تماس و واتساپ</small><b dir="ltr">09024356801</b><a href="tel:09024356801">تماس تلفنی</a></div>
+      <div><span>⌖</span><small>نشانی</small><b>روستای جوادیه، پشت دستگاه تسویه آب</b><small>مراجعه حضوری</small></div>
+      <div><span>◷</span><small>نحوه ارائه خدمات</small><b>حضوری</b><small>سفارش سایت برای هماهنگی اولیه است</small></div>
+    </div>
+    <a class="btn btn-light" href="https://wa.me/989024356801" target="_blank" rel="noopener">پیام در واتساپ</a>
+  </div>
 </section>
 </main>
-<footer><a class="brand" href="#home"><span class="brand-mark">R</span><span><b>کافی‌نت رضا</b><small>PC REZA CENTER</small></span></a><p>© تمامی حقوق برای کافی‌نت رضا محفوظ است.</p></footer>
-<script>
-"use strict";
-const WA="989024356801";
-function whatsapp(message){window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(message),"_blank","noopener");}
-const groups=[
-{icon:"🚘",title:"خدمات خودرو و موتور",items:["ثبت‌نام و پیگیری ایران‌خودرو","ثبت‌نام و پیگیری سایپا","ثبت‌نام بهمن موتور و کرمان موتور","ثبت‌نام خودروهای وارداتی و اقساطی","نتایج قرعه‌کشی و پیگیری ثبت‌نام خودرو","نوبت‌دهی تعویض پلاک","پرداخت خلافی خودرو و موتورسیکلت","عوارض آزادراهی و سالیانه خودرو","مالیات نقل‌وانتقال خودرو","احراز نشانی و پیگیری وضعیت پلاک","پیگیری کارت و سند موتورسیکلت"]},
-{icon:"🛂",title:"گذرنامه و نظام وظیفه",items:["ثبت درخواست گذرنامه عادی","ثبت درخواست گذرنامه زیارتی","پیگیری، تمدید و تعویض گذرنامه","درخواست و پیگیری معافیت تحصیلی","پیگیری وضعیت نظام وظیفه","پیگیری کارت پایان خدمت"]},
-{icon:"💳",title:"یارانه و خدمات معیشتی",items:["اعتراض به دهک‌بندی خانوار","اعتراض به قطع یارانه","درخواست بررسی مجدد وضعیت خانوار","درخواست جداسازی یارانه اعضای خانوار","پیگیری کالابرگ الکترونیکی","ثبت و پیگیری درخواست‌های معیشتی"]},
-{icon:"🏦",title:"وام و تسهیلات بانکی",items:["ثبت‌نام وام ازدواج","ثبت‌نام وام فرزندآوری","ثبت‌نام وام ودیعه مسکن","تسهیلات مشاغل خانگی و خوداشتغالی","تسهیلات اشتغال و روستایی","تسهیلات دانشجویی و حمایتی","پیگیری درخواست تسهیلات و وام","راهنمایی شرایط قانونی انتقال امتیاز تسهیلات در صورت مجاز بودن"]},
-{icon:"⚖️",title:"خدمات قضایی و ثنا",items:["ثبت‌نام و احراز هویت سامانه ثنا","دریافت و چاپ ابلاغیه الکترونیکی","بازیابی رمز عبور ثنا","دریافت گواهی عدم سوءپیشینه","ثبت درخواست‌های قضایی","پیگیری پرونده و نوبت‌دهی قضایی"]},
-{icon:"🏛️",title:"خدمات دولتی و اداری",items:["پنجره ملی خدمات دولت هوشمند","سامانه دولت من و احراز هویت","ارتقای سطح کاربری دولت هوشمند","خدمات املاک و اسکان","ثبت درخواست‌های اداری و دولتی","ثبت و پیگیری درخواست‌های حمایتی","خدمات ثبت احوال و مدارک هویتی","کارت سوخت و پیگیری درخواست"]},
-{icon:"🏧",title:"خدمات بانکی و پرداخت",items:["پرداخت قبوض خدماتی","خرید شارژ تلفن همراه","خرید بسته اینترنت","خدمات اینترنتی بانکی مجاز","پیگیری درخواست‌های بانکی"]},
-{icon:"🛡️",title:"بیمه و امور مالیاتی",items:["استعلام و تمدید بیمه شخص ثالث","استعلام و تمدید بیمه بدنه","بیمه عمر، درمان و آتش‌سوزی","مشاهده سوابق بیمه تأمین اجتماعی","دریافت فیش و حکم بازنشستگی","خدمات بیمه سلامت","تشکیل و پیگیری پرونده مالیاتی","اظهارنامه و بدهی مالیاتی","مالیات نقل‌وانتقال خودرو"]},
-{icon:"🎓",title:"خدمات تحصیلی و آزمون‌ها",items:["ثبت‌نام مدارس و دانشگاه‌ها","ثبت‌نام دانشگاه آزاد و سراسری","ثبت‌نام پیام نور و علمی‌کاربردی","ثبت‌نام آزمون‌های سراسری","ثبت‌نام آزمون‌های استخدامی","انتخاب رشته و پیگیری نتایج","امور آموزشی و بارگذاری مدارک","ثبت درخواست معافیت تحصیلی"]},
-{icon:"💻",title:"کامپیوتر و لپ‌تاپ",items:["نصب ویندوز ۱۰ و ۱۱","نصب آفیس و نرم‌افزارهای کاربردی","نصب درایور و آنتی‌ویروس","عیب‌یابی و تعمیر نرم‌افزاری رایانه","ارتقای رم و حافظه SSD","نصب و راه‌اندازی پرینتر","رفع مشکلات اینترنت و مودم","بازیابی اطلاعات و فایل‌های حذف‌شده","انتقال اطلاعات و پشتیبان‌گیری","نصب بازی و شبیه‌ساز"]},
-{icon:"📱",title:"خدمات موبایل",items:["نصب و راه‌اندازی برنامه‌های موبایل","انتقال اطلاعات بین گوشی‌ها","انتقال اطلاعات گوشی به رایانه","پشتیبان‌گیری از مخاطبین و فایل‌ها","رفع مشکلات نرم‌افزاری گوشی","تنظیمات اینترنت و شبکه موبایل","راهنمایی راه‌اندازی گوشی اندروید و آیفون"]},
-{icon:"🖨️",title:"تایپ، چاپ و طراحی",items:["تایپ فارسی و انگلیسی","پرینت سیاه‌وسفید و رنگی","کپی و اسکن مدارک","طراحی تراکت و پوستر تبلیغاتی","طراحی کارت ویزیت و سربرگ","طراحی آگهی و اعلامیه ترحیم","طراحی استوری و تبلیغات شبکه‌های اجتماعی","تنظیم و ویرایش فایل Word و PDF","ساخت رزومه و فرم‌های اداری","چاپ عکس و صحافی"]},
-{icon:"📷",title:"عکاسی و خدمات تصویری",items:["آماده‌سازی عکس پرسنلی","تنظیم عکس ۳×۴ و ابعاد چاپ","ویرایش عکس برای چاپ","چاپ عکس در ابعاد مختلف"]},
-{icon:"🌐",title:"ثبت‌نام‌ها و خدمات اینترنتی",items:["تکمیل فرم‌های اینترنتی","بارگذاری مدارک در سامانه‌ها","دریافت نوبت اینترنتی","بازیابی رمز عبور سامانه‌ها","پیگیری درخواست‌های اینترنتی","خدمات سامانه‌های مسکن و املاک","ثبت‌نام طرح‌ها و سامانه‌های حمایتی"]},
-{icon:"🌾",title:"خدمات روستایی و کشاورزی",items:["ثبت‌نام و پیگیری طرح‌های روستایی","خدمات اینترنتی کشاورزی و دامداری","ثبت درخواست‌های حمایتی روستایی","راهنمایی ثبت‌نام مجوزهای کسب‌وکار"]}
-];
-const grid=document.getElementById("serviceGrid"),filters=document.getElementById("filters");
-let active="همه خدمات",query="";
-const categories=["همه خدمات",...groups.map(g=>g.title)];
-categories.forEach(name=>{const b=document.createElement("button");b.className="filter"+(name===active?" active":"");b.textContent=name;b.addEventListener("click",()=>{active=name;render();});filters.appendChild(b);});
-function render(){grid.innerHTML="";filters.querySelectorAll("button").forEach(b=>b.classList.toggle("active",b.textContent===active));
-groups.filter(g=>(active==="همه خدمات"||g.title===active)&&(!query||(g.title+" "+g.items.join(" ")).includes(query))).forEach(g=>{const card=document.createElement("article");card.className="service-card";const icon=document.createElement("span");icon.className="service-icon";icon.textContent=g.icon;const h=document.createElement("h3");h.textContent=g.title;const ul=document.createElement("ul");ul.className="service-list";g.items.filter(x=>!query||(x+" "+g.title).includes(query)).forEach(item=>{const li=document.createElement("li"),s=document.createElement("span"),b=document.createElement("button");s.textContent=item;b.className="order-service";b.textContent="سفارش در واتساپ";b.addEventListener("click",()=>whatsapp("سلام، از طریق سایت کافی‌نت رضا برای خدمت «"+item+"» درخواست دارم. لطفاً برای هماهنگی و مراجعه حضوری راهنمایی بفرمایید."));li.append(s,b);ul.append(li);});card.append(icon,h,ul);grid.append(card);});
-if(!grid.children.length)grid.innerHTML="<p>خدمتی با این عبارت پیدا نشد. عبارت دیگری جست‌وجو کنید.</p>";
-}
-document.getElementById("serviceSearch").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();active="همه خدمات";render();});
-document.querySelectorAll(".product-order").forEach(b=>b.addEventListener("click",()=>whatsapp("سلام، برای سفارش یا استعلام قیمت «"+b.dataset.product+"» از کافی‌نت رضا پیام می‌دهم. لطفاً راهنمایی بفرمایید.")));
-document.getElementById("menuToggle").addEventListener("click",()=>document.getElementById("mainNav").classList.toggle("open"));
-document.querySelectorAll("#mainNav a").forEach(a=>a.addEventListener("click",()=>document.getElementById("mainNav").classList.remove("open")));
-render();
-// بازی مار
-(()=>{const c=document.getElementById("snakeCanvas"),ctx=c.getContext("2d"),cell=19,cells=20,scoreEl=document.getElementById("snakeScore"),bestEl=document.getElementById("snakeBest"),msg=document.getElementById("snakeMessage");let snake,food,dir,next,score,best=0,timer=null,running=false;
-const fa=n=>n.toLocaleString("fa-IR");function foodAt(){do{food={x:Math.floor(Math.random()*cells),y:Math.floor(Math.random()*cells)}}while(snake.some(p=>p.x===food.x&&p.y===food.y));}
-function draw(){ctx.fillStyle="#081421";ctx.fillRect(0,0,380,380);ctx.strokeStyle="#14283b";for(let i=0;i<=380;i+=cell){ctx.beginPath();ctx.moveTo(i,0);ctx.lineTo(i,380);ctx.stroke();ctx.beginPath();ctx.moveTo(0,i);ctx.lineTo(380,i);ctx.stroke();}ctx.fillStyle="#ffca65";ctx.beginPath();ctx.arc(food.x*cell+9,food.y*cell+9,7,0,Math.PI*2);ctx.fill();snake.forEach((p,i)=>{ctx.fillStyle=i===0?"#39d6b0":"#219b86";ctx.fillRect(p.x*cell+2,p.y*cell+2,cell-4,cell-4);});}
-function reset(){snake=[{x:9,y:10},{x:8,y:10},{x:7,y:10}];dir={x:1,y:0};next={x:1,y:0};score=0;scoreEl.textContent=fa(score);foodAt();draw();}
-function stop(t){running=false;clearInterval(timer);timer=null;msg.textContent=t;}
-function tick(){dir=next;const head={x:snake[0].x+dir.x,y:snake[0].y+dir.y},eat=head.x===food.x&&head.y===food.y;if(head.x<0||head.x>=cells||head.y<0||head.y>=cells||snake.slice(0,eat?snake.length:snake.length-1).some(p=>p.x===head.x&&p.y===head.y)){stop("بازی تمام شد! برای شروع دوباره، دکمه شروع را بزنید.");return;}snake.unshift(head);if(eat){score++;best=Math.max(best,score);scoreEl.textContent=fa(score);bestEl.textContent=fa(best);foodAt();}else snake.pop();draw();}
-function start(){if(running)return;reset();running=true;msg.textContent="بازی شروع شد؛ موفق باشید!";timer=setInterval(tick,125);}
-function turn(d){const map={up:{x:0,y:-1},down:{x:0,y:1},left:{x:-1,y:0},right:{x:1,y:0}},v=map[d];if(v&&(v.x!==-dir.x||v.y!==-dir.y))next=v;}
-document.getElementById("snakeStart").addEventListener("click",start);document.getElementById("snakePause").addEventListener("click",()=>{if(running)stop("بازی متوقف شد.");else msg.textContent="برای شروع بازی دکمه شروع را بزنید.";});
-document.addEventListener("keydown",e=>{const m={ArrowUp:"up",ArrowDown:"down",ArrowLeft:"left",ArrowRight:"right"};if(m[e.key]&&document.getElementById("game").getBoundingClientRect().bottom>0&&document.getElementById("game").getBoundingClientRect().top<innerHeight){e.preventDefault();turn(m[e.key]);}});
-document.querySelectorAll(".snake-controls button").forEach(b=>b.addEventListener("click",()=>turn(b.dataset.dir)));reset();})();
-</script>
+
+<footer>
+  <a class="brand" href="#home"><span class="brand-logo">R</span><span><b>کافی‌نت رضا</b><small>PC REZA CENTER</small></span></a>
+  <p>© تمامی حقوق برای کافی‌نت رضا محفوظ است.</p>
+  <a href="#home">بازگشت به بالا ↑</a>
+</footer>
+
+<div class="drawer-backdrop" id="cartBackdrop"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="سبد سفارش">
+  <div class="drawer-head"><h3>سبد سفارش شما</h3><button id="cartClose" aria-label="بستن">×</button></div>
+  <div id="cartItems" class="cart-items"><p class="empty-cart">هنوز موردی انتخاب نشده است.</p></div>
+  <div class="drawer-bottom">
+    <label>نام شما (اختیاری)<input id="orderName" placeholder="نام و نام خانوادگی"></label>
+    <label>توضیحات (اختیاری)<textarea id="orderNote" rows="2" placeholder="توضیحات تکمیلی سفارش"></textarea></label>
+    <button class="btn btn-primary full" id="sendOrder">ثبت سفارش و ارسال به واتساپ</button>
+    <small>با ثبت سفارش، پیام درخواست شما در واتساپ باز می‌شود. انجام خدمات حضوری است.</small>
+  </div>
+</aside>
+
+<div class="modal-backdrop" id="adminModal">
+  <section class="admin-modal">
+    <button class="modal-x" id="adminClose" aria-label="بستن">×</button>
+    <div id="adminLoginView">
+      <span class="eyebrow">مدیریت سایت</span><h2>ورود مدیر</h2>
+      <p class="muted">با شماره موبایل و رمز عبور حساب مدیر وارد شوید.</p>
+      <form id="adminLoginForm">
+        <label>شماره موبایل<input id="adminPhone" type="tel" autocomplete="username" placeholder="مثلاً 09xxxxxxxxx" required></label>
+        <label>رمز عبور<input id="adminPassword" type="password" autocomplete="current-password" required></label>
+        <button class="btn btn-primary full" type="submit">ورود به پنل مدیریت</button>
+      </form>
+      <p id="adminAuthMessage" class="form-message"></p>
+    </div>
+    <div id="adminPanelView" hidden>
+      <div class="admin-title"><div><span class="eyebrow">داشبورد</span><h2>پنل مدیریت کافی‌نت رضا</h2></div><button class="btn btn-outline-dark" id="adminLogout">خروج</button></div>
+      <div class="admin-tabs"><button class="active" data-tab="servicesAdmin">مدیریت خدمات</button><button data-tab="ordersAdmin">سفارش‌ها</button></div>
+      <div id="servicesAdmin" class="admin-tab">
+        <form id="serviceForm" class="admin-form">
+          <input type="hidden" id="editServiceId">
+          <label>عنوان خدمت<input id="serviceTitle" required placeholder="مثلاً دریافت ابلاغیه"></label>
+          <label>دسته‌بندی<input id="serviceCategory" required placeholder="مثلاً خدمات قضایی و ثنا"></label>
+          <label>توضیح کوتاه<input id="serviceDescription" placeholder="توضیح خدمت"></label>
+          <label>آیکون<input id="serviceIcon" maxlength="8" value="📌"></label>
+          <div class="admin-form-actions"><button class="btn btn-primary" type="submit">ذخیره خدمت</button><button class="btn btn-outline-dark" type="button" id="cancelServiceEdit">پاک کردن فرم</button></div>
+        </form>
+        <div id="adminServiceList" class="admin-list"></div>
+      </div>
+      <div id="ordersAdmin" class="admin-tab" hidden><div id="adminOrdersList" class="admin-list"></div></div>
+      <p id="adminPanelMessage" class="form-message"></p>
+    </div>
+  </section>
+</div>
+<div class="toast" id="toast" role="status"></div>
 </body>
 </html>
